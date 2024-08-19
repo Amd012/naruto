@@ -1,0 +1,197 @@
+@import url('https:fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    background: url("naru.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 20px;
+    }
+
+.form-container{
+    display:flex;
+    width: 450px;
+    height: 600px;
+    border:3px solid rgba(255,255,255,0.3);
+    border-radius: 30px;
+    backdrop-filter: blur(20px);
+    overflow: hidden;
+}    
+
+.form-col{
+    position: relative;
+    width: 100%;
+    overflow:hidden;
+}
+
+.btn-box{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    margin-top:30px;
+}
+
+.btn{
+    font-weight: 500;
+    padding:8px 30px;
+    border: none;
+    border-radius: 30px;
+    background:orangered;
+    color:#fff;
+    box-shadow: 0 5px 10px red;
+    cursor: pointer;
+    transition: .2s ;
+}
+.btn-1{
+    background:orangered ;
+}
+.btn:hover{
+    opacity:0.85;
+}
+
+.form-box{
+    position: absolute;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 30px;
+    transition: .3s;
+}
+
+.form-title {
+    margin:40px 0;
+    color:orangered;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.login-form{
+    left:50%;
+}
+
+.register-form{
+    left:-50%;
+}
+
+.register-form .form-title {
+    margin-block:40px 20px;
+}
+
+.form-inputs{
+    width: 100%;
+}
+
+.input-box{
+    position:relative
+}
+.input {
+    width:100%;
+    height: 55px;
+    margin: 10px 0;
+    color:orangered;
+    border: none;
+    border-radius:50px;
+    box-shadow: 0 0 10px red;
+}
+.input-field {
+    font-size: 16px;
+    padding: 0 40px 0 20px;
+    background: rgba(255,255,255,0.2);
+    outline:none;
+    backdrop-filter: blur(20px);
+}
+
+::placeholder {
+    color: orangered;
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+.input-box .icon {
+    position:absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    color:orangered;
+    width: 17px;
+    height:17px;
+}
+
+.forgot-pass,.remember-me{
+    display: flex;
+    justify-content: right;
+    gap:5px;
+}
+
+.forgot-pass a{
+    color:orangered;
+    text-decoration: none;
+    font-size:14px;
+    font-weight: 800;
+}
+.forgot-pass a:hover {
+    text-decoration:underline;
+}
+.remember-me label{
+    color:orangered;
+    font-size: 14px;
+    font-weight:800;
+}
+.submit-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    background:orangered;
+    color:#fff;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.submit-btn:hover{
+    gap:15px;
+
+}
+
+.social-login {
+    display: flex;
+    gap:20px;
+    margin-top:20px;
+}
+
+.social-login-box {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:40px;
+    width:40px;
+    background:rgba(255,255,255,0.2);
+    border-radius:50%;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+    color:#fff;
+    cursor: pointer;
+    transition:.2s;
+}
+
+.social-login-icon {
+    width:24px;
+}
+
+.social-login-box:hover {
+    transform:scale(0.9);
+    color:orangered;
+
+}
